@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="none" name="Selenium-Java(failed)">
+    <classes>
+      <class name="org.example.FirstTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyTitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- org.example.FirstTestCase -->
+    </classes>
+  </test> <!-- Selenium-Java(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

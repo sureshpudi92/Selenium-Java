@@ -1,4 +1,4 @@
-package org.example;
+package webdriverIntroduction;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,17 +15,17 @@ public class FirstTestCase {
 
     @BeforeTest
     public void setup() {
-        driver = new ChromeDriver(); // Initialize WebDriver
+        driver = new ChromeDriver();   // Create an instance of ChromeDriver //upcasting
         driver.manage().window().maximize(); // Maximize browser window
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://google.com/"); // Open Google
+        driver.get("https://demo.nopcommerce.com/"); // Open Google
     }
 
     @Test
     public void verifyTitle() {
         String act_title = driver.getTitle();
         System.out.println("Actual Title: " + act_title);
-        Assert.assertEquals(act_title, "Google", "Title does not matched");
+        Assert.assertEquals(act_title, "nopCommerce demo store. Home page title", "Title does not matched");
     }
 
     @AfterTest
