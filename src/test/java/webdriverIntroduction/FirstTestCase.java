@@ -1,6 +1,7 @@
 package webdriverIntroduction;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -19,6 +20,7 @@ public class FirstTestCase {
         driver.manage().window().maximize(); // Maximize browser window
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("http://demo.nopcommerce.com/"); // Open Google
+
     }
 
     @Test
@@ -32,4 +34,5 @@ public class FirstTestCase {
     public void teardown() {
         driver.quit(); // Close the browser
     }
+
 }
